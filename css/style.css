@@ -1,0 +1,266 @@
+/* mac搜索文档：command + F */
+/* windows搜索文档：ctrl + F */
+
+/* 4种选择器：
+
+    第一种：标签选择器，在html中是<div>
+    在css中是：（前面没有任何字符）
+    div {
+    }
+
+    第二种：类选择器，在html中是 class = "first_class"
+    在css中是：.加上名字
+    .first_class{
+    }
+
+    第三种：id选择器，在html中是 id = "haha"
+    在css中是：#加上名字
+    #haha{
+    }
+
+    第三种：伪类选择器，在html中没有
+    在css中是：:加上名字
+    :hover {
+    }
+    :focus {
+    }
+    用途：某个元素特定的状态下，比如鼠标hover在这个元素上，或者鼠标选中这个元素
+    假如这个元素id是haha，
+    .haha:hover {
+    }
+*/
+
+/* id class 和 tag的优先级
+    id 最高，看到#开头有设置属性，就是他了
+    其次是class
+    最后是tag
+    如果加了！important 比如color: red !important; 那这个的优先级最高
+
+*/
+
+/* grid-template 只有容器需要设置
+    比如：html里是
+    <div class='container'> 
+        <div id='ele_1'>1<div>
+        <div id='ele_2'>2<div>
+        <div id='ele_3'>3<div>
+    </div>
+
+    在csss中：
+    .container {
+        在这里设置grid-template(grid-template-columns 和 grid-template-rows)
+    }
+    #ele_1 {
+        在这里设置grid-row和grid-column
+    }
+ */
+
+ /* 
+    justify-content, justify-items, align-content, align-items 都是在flex或者grid容器元素里用
+    align-self是在子元素里用
+    align 管上下
+    justify 管左右
+
+    https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items
+
+    比如：html里是
+    <div class='container'> 
+        <div id='ele_1'>1<div>
+        <div id='ele_2'>2<div>
+        <div id='ele_3'>3<div>
+    </div>
+
+    在csss中：
+    .container {
+        在这里设置justify-content, justify-items, align-content, align-items
+    }
+    #ele_1 {
+        在这里设置align-self
+    }
+
+    space-evenly - grid rows will have even spacing above/between/below
+    space-around - grid rows will have equal spacing above and below
+    space-between - rows will be split between top and bottom
+
+ */
+
+ /* position
+ 
+    absolute 是根据父元素定位
+    relateive 是根据现在的位置定位
+
+    sticky都可以来这个页面试一下
+    https://developer.mozilla.org/en-US/docs/Web/CSS/position
+ */
+
+ /* https:// 是协议 protocol
+    .com .edu .org .gov 之前的都是域名 domain
+    之后的都是document
+ */
+
+ /* self closing tags
+ <br />
+<col />
+<hr />
+<img />
+<input />
+<link /> */
+
+/* header 里的东西：title, navigation links  */
+
+/* font-family 如果名字里有空格，比如Time New Roman 必须用""双引号包住 */
+
+/* 选择器selector + > , 空格
+    https://levelup.gitconnected.com/understanding-use-of-the-and-symbols-in-css-selectors-95552eb436f5
+*/
+
+
+/* % 是根据父元素的来决定，如果父元素没有决定高宽，那就继续往上找
+    vh vw 是视窗的高和宽，不用写百分比号，比如：height: 80vh
+    rem 是整个文件有个默认的text size，不特殊设置的话就是16px
+    1.5rem 就是1.5乘以这个默认的size 
+ */
+
+ /* 当子元素内容超过了父元素 在父元素里Set overflow
+    Visible: Any overflowing content will display outside the element –  this can overlap other items on the page
+    Hidden: hides anything that would extend outside of the element
+    Scroll: adds scrollbars within your element
+    Auto: adds scrollbars when necessary
+ */
+
+ /* z-index 谁大谁覆盖在上面 */
+
+ /* 
+    grid-row: 1 / span 3
+    意思是： 从最开头开始，占3份
+ */
+
+ /* media query
+
+    @media screen and (min-width: 900px) {
+        
+    }
+
+    例子：
+    img {
+        border: 2px solid black;
+        width: 95%; 
+    }
+    @media screen and (min-width:700px) {
+        img {
+            width: 45%; 
+        }
+    }
+    @media screen and (min-width:1400px){
+        img {
+            border: 4px solid black;
+            width: 30%; 
+        }
+    }
+
+ */
+
+ /* Amend HTML to Request Size
+    The meta viewport tag tells mobile browsers how to behave
+    <meta name=‘viewport’ content=‘width=device-width, initial-scale=1’>
+    Can disallow zooming, but this is not accessible - do not do this
+    <meta name=‘viewport’ content=‘width=device-width, initial-scale=1, maximum-scale=1’>
+
+ */
+#calculate {
+    width: 200px;
+    height: 150px;
+    border: 5px solid blue;
+    background-color: yellow;
+
+    /* margin，padding, border 的四种写法 */
+    /*      上   右   下   左     */
+    margin: 20px 10px 20px 10px; 
+    
+    /*      上   右左 下   */
+    margin: 20px 10px 20px;
+    
+    /*      上下  右左  */
+    margin: 20px 10px;
+
+    /*      上下右左  */
+    padding: 12px;
+}
+
+#green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    color: purple;
+}
+
+.container {
+    /* display: flex; */
+    display: grid;
+    justify-content:start;
+    justify-items:start;
+    align-content:flex-start;
+    align-items:flex-start;
+}
+
+#ele_1 {
+    align-self: baseline;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.box:hover {
+    border: 10px double green;
+}
+
+.child {
+    /* position: absolute; */
+    background-color: grey;
+}
+
+.fill {
+    font-size: 1000px;
+}
+
+#ele_1, #ele_2,#ele_3 {
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    margin: 4px;
+}
+
+a:link{
+    color:blue; 
+    text-decoration: none;
+    }
+    
+ a:visited{
+    
+    color:purple;
+    
+    }
+    
+a:hover{
+    text-decoration:underline;
+    }
+    
+a:focused{
+    border: 1px solid black;
+    }
