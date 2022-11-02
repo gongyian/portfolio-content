@@ -40,6 +40,10 @@ nav a {
  color: grey;
 }
 
+nav a:hover{
+    text-decoration-style: wavy;
+}
+
 h1{
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
@@ -100,3 +104,27 @@ figcaption{
 #hong{
     width: 200px;
 }
+
+a{
+
+    color:blue;
+    
+    }
+    
+a:visited{
+    
+    color:purple;
+    
+    }
+    
+a:hover{
+    
+    text-decoration:underline;
+    
+    }
+    
+a:focused{
+    
+    border: 1px solid black;
+    
+    }
