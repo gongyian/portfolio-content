@@ -1,10 +1,10 @@
 #title{
     font-family: 'Rubik', sans-serif;
-    font-size: 130px;
+    font-size: 13vh;
     text-shadow: 5px -5px #BE1C2D;
     letter-spacing:5px;
-    padding-bottom: 140px;
-    padding-top: 110px;
+    padding-bottom: 17vh;
+    padding-top: 14vh;
     text-align: center;
     font-weight: bolder;
 
@@ -13,7 +13,6 @@ p{
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
     padding: 10px;
-    font-size: small;
     font-weight: lighter;
 }
 
@@ -29,7 +28,6 @@ a{
 footer{
     padding: 20px;
     width: auto;
-    font-size: 20px;
     margin-top: 40px;
     font-family: 'Open Sans', sans-serif;
     background-color: #B4CFEC;
@@ -39,6 +37,7 @@ footer p{
     display: inline-block;
     margin-right: 10px;
     margin-left: 10px;
+    font-size: 3vh;
 
 }
 
@@ -56,7 +55,7 @@ nav a{
     padding: 10px;
     color: #000;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 3vh;
 
 }
 nav a:hover{
@@ -70,7 +69,7 @@ nav a:hover{
 
 
 h1{
-    font-size: 50px;
+    font-size: 5vh;
     font-family: 'Rubik', sans-serif;
     margin: 24px 8px;
     font-weight: bold;
@@ -149,7 +148,7 @@ figcaption{
 }
 
 .aside-content p{
-    font-size: 30px;
+    font-size: 3vh;
 }
 
 .other_nav{
