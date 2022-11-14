@@ -71,7 +71,7 @@ h1{
 
 
 .food_img img{
-    width: 400px;
+    max-width: 80%;
     border: 3px solid black;
     margin: 20px 0 10px 10px;
 }
@@ -84,14 +84,18 @@ h1{
     align-items: center;
 }
 
-figcaption{
+.food_img figcaption{
     margin: 0 0 10px 10px;
 }
 
 .other_img img{
-    width: 400px;
+    max-width: 80%;
     border: 1px solid #000;
     margin: 50px auto auto 30px;
+}
+
+.other_img figcaption{
+    margin: 5px auto 0 30px;
 }
 
 @keyframes fades{
