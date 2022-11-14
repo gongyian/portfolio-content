@@ -1,6 +1,6 @@
 #title{
     font-family: 'Rubik', sans-serif;
-    font-size: 90px;
+    font-size: 130px;
     text-shadow: 5px -5px #BE1C2D;
     letter-spacing:5px;
     padding-bottom: 140px;
@@ -27,9 +27,10 @@ a{
 }
 
 footer{
+    padding: 20px;
     width: auto;
-    font-size: 15px;
-    margin-top: 30px;
+    font-size: 20px;
+    margin-top: 40px;
     font-family: 'Open Sans', sans-serif;
     background-color: #B4CFEC;
 }
@@ -48,12 +49,14 @@ nav{
 
 nav li{
     display: inline-block;
-    margin: 20px 30px;
+    margin: 30px auto 30px 30px;
 }
 
 nav a{
+    padding: 10px;
     color: #000;
     font-weight: 400;
+    font-size: 30px;
 
 }
 nav a:hover{
@@ -67,7 +70,7 @@ nav a:hover{
 
 
 h1{
-    font-size: 20px;
+    font-size: 50px;
     font-family: 'Rubik', sans-serif;
     margin: 24px 8px;
     font-weight: bold;
@@ -89,14 +92,13 @@ h1{
 }
 
 figcaption{
-    margin: 0 0 10px 10px;
+    margin: 5px 0 10px 30px;
 }
 
 .other_img img{
     width: 400px;
-    padding: 1px;
     border: 1px solid #000;
-    margin: 10px 0 10px 20px;
+    margin: 50px auto auto 30px;
 }
 
 @keyframes fades{
@@ -117,11 +119,22 @@ figcaption{
 }
 
 .grid4{
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
 }
 
 .grid5{
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.extra{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+
 }
 
 .aside-content{
@@ -136,11 +149,15 @@ figcaption{
 }
 
 .aside-content p{
-    font-size:larger
+    font-size: 30px;
 }
 
 .other_nav{
     background-color: #B4CFEC;
+}
+
+p{
+    font-size: larger;
 }
 
 @media (prefers-reduced-motion: reduce) {
