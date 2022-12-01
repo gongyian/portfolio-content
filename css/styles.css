@@ -35,8 +35,6 @@ footer{
 
 footer p{
     display: inline-block;
-    font-size: 1.5vh;
-
 }
 
 nav{
@@ -45,20 +43,21 @@ nav{
 
 nav li{
     display: inline-block;
-    margin: 2vh auto 2vh 2vh;
+    margin: 3vh auto 3vh 2vh;
 }
 
 nav a{
     padding: 10px;
     color: #000;
     font-weight: 400;
-    font-size: 2vh;
+    font-size: 1rem;
 
 }
 
 .background_img{
     background-image: url("../images/homepage-cityview.jpg");
-    background-size: auto 60vh;
+    background-size: 200vh 70vh;
+    background-repeat: no-repeat;
 }
 
 
@@ -73,61 +72,77 @@ h1{
 .food_img img{
     max-width: 80%;
     border: 3px solid black;
-    margin: 20px 0 10px 10px;
+    margin: 10px;
+    align-self: center;
 }
 
-.food_img{
+.food_img figure{
     display:flex;
     flex-wrap:wrap;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .food_img figcaption{
     margin: 0 0 10px 10px;
+    max-width: 80%;
+    align-self: center;
 }
 
-.other_img img{
+.subway_img img{
     max-width: 80%;
     border: 1px solid #000;
     margin: 50px auto auto 30px;
 }
 
-.other_img figcaption{
+.subway_img figcaption{
     margin: 5px auto 0 30px;
 }
+
+.culture_img img{
+    max-width: 80%;
+    border: 1px solid #000;
+    margin: 50px auto auto 30px;
+    animation: fades 2s linear forwards;
+}
+
+.culture_img figcaption{
+    margin: 5px auto 0 30px;
+}
+
 
 @keyframes fades{
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-#hong{
-    animation: fades 2s linear forwards;
 
-}
-
-.grid-container{
+.grid-homepage{
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 6fr;
+    grid-template-rows: 3fr;
     justify-content: center;
 }
 
-.grid4{
+.grid2{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 50px;
 }
 
-.grid5{
+.grid3{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 50px;
 }
 
-.extra{
+.culture_content{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+
+}
+
+.subway_content{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 50px;
@@ -153,8 +168,39 @@ h1{
     background-color: #B4CFEC;
 }
 
-p{
-    font-size: larger;
+
+
+@media screen and (min-width: 768px) {
+
+    .grid-homepage{
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr;
+    }
+
+    .grid1{
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .grid2{
+        width: 40%;
+        grid-column: 1 / 1 ;
+    }
+
+    .grid3{
+        width: 40%;
+        grid-column: 2 / span 1 ;
+    } 
+
+    .food_img img{
+        width: 30%;
+    }
+
+    .food_img figcaption{
+        display:none;
+    }
+
+	
 }
 
 @media (prefers-reduced-motion: reduce) {
