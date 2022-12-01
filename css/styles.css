@@ -76,7 +76,7 @@ h1{
     align-self: center;
 }
 
-.food_img figure{
+.food_img{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
@@ -84,7 +84,6 @@ h1{
 
 .food_img figcaption{
     margin: 0 0 10px 10px;
-    max-width: 80%;
     align-self: center;
 }
 
@@ -122,6 +121,7 @@ h1{
     grid-template-rows: 3fr;
     justify-content: center;
 }
+
 
 .grid2{
     margin-left: 20px;
@@ -178,27 +178,21 @@ h1{
     }
 
     .grid1{
-        grid-column: 1 / span 1;
+        grid-column: 1 / span 2;
         grid-row: 1 / span 1;
     }
 
     .grid2{
-        width: 40%;
-        grid-column: 1 / 1 ;
+        grid-column: 1 / span 1 ;
+        grid-row: 2 / span 1;
     }
 
     .grid3{
-        width: 40%;
         grid-column: 2 / span 1 ;
+        grid-row: 2 / span 1;
     } 
 
-    .food_img img{
-        width: 30%;
-    }
 
-    .food_img figcaption{
-        display:none;
-    }
 
 	
 }
