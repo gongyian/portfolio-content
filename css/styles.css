@@ -33,7 +33,7 @@ header .nav_links{
     flex-direction: column;
 }
 
-.skip-link{
+/* .skip-link{
     position: absolute;
     top: 34%;
     left:30%;
@@ -45,7 +45,7 @@ header .nav_links{
     color: #000;
     text-decoration: none;;
     font-size: 0.3rem;
-}
+} */
 
 
 p{
@@ -227,7 +227,6 @@ form{
     transition: top 1s ease-out;
     z-index: 1;
     position: absolute;
-    left: 500px;
     top: -40px;
     /*Your code here - position relative to the parent */
     /*Your code here - place 500px left and 40px higher */;
