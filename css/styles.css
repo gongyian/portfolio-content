@@ -238,7 +238,7 @@ input[type=email], select {
     box-sizing: border-box;
   }
 
-textarea[type=message], select {
+textarea[name=message], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -270,7 +270,7 @@ button[type=submit] {
     background: white;
     left: 0;
     padding: 6px;
-    -webkit-transition: top 1s ease-out;
+    /* -webkit-transition: top 1s ease-out; */
     transition: top 1s ease-out;
     z-index: 1;
     position: absolute;
@@ -284,7 +284,7 @@ button[type=submit] {
     top: 0;
     left: 0;
     padding: 6px;
-    -webkit-transition: top 1s ease-out;
+    /* -webkit-transition: top 1s ease-out; */
     transition: top 1s ease-out;
     z-index: 1;
     position: absolute;
@@ -434,7 +434,7 @@ button[type=submit] {
     .culture_grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-row: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .culture_img{
