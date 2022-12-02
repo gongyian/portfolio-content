@@ -28,6 +28,11 @@
 
 }
 
+header .nav_links{
+    display: flex;
+    flex-direction: column;
+}
+
 .skip-link{
     position: absolute;
     top: 34%;
@@ -119,6 +124,7 @@ h1{
 .food_img figcaption{
     margin: 0 0 10px 10px;
     align-self: center;
+    font-weight: 500;
 }
 
 .subway_img img{
@@ -213,16 +219,57 @@ form{
     margin: 20px;
 }
 
-.arrow{
-margin-left: 30px;
-}
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    left: 500px;
+    top: -40px;
+    /*Your code here - position relative to the parent */
+    /*Your code here - place 500px left and 40px higher */;
+  }
+
+  .skip a:focus{
+    background: white;
+    top: 0;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+  }
+  
 .food_h1{
     padding-left: 20px;
 }
 
+.food_img figure:hover img{
+    filter: blur(4px);
+
+}
+
+.food_img figure:hover figcaption{
+    font-weight: 500;
+    position:relative;
+    top: -50px;
+    left:30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #be1c2d;
+}
+
+
 
 
 @media screen and (min-width: 768px) {
+
+    header .nav_links{
+        flex-direction: row;
+    }
 
 
     #title{
@@ -280,11 +327,29 @@ margin-left: 30px;
         margin-top: 50px;
     }
 
+    .food_img figure:hover img{
+        filter: blur(0px);
+    
+    }
+    
+    .food_img figure:hover figcaption{
+        font-weight: 500;
+        position:relative;
+        top: 0;
+        left:0;
+        color: #000;
+        text-shadow: none;
+    }
+
 
 	
 }
 
 @media screen and (min-width: 968px){
+
+    header .nav_links{
+        flex-direction: row;
+    }
 
 
     .grid-homepage{
@@ -348,11 +413,6 @@ margin-left: 30px;
         grid-row: 2 / span 1;
 
     }
-
-
-
-
-
 
 }
 
