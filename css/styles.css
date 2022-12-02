@@ -225,7 +225,11 @@ form{
 form #email{
     display: block;
     padding: 10px;
+}
+
+form #message{
     display: block;
+    padding: 10px;
 }
 
 input[type=email], select {
@@ -249,11 +253,6 @@ textarea[name=message], select {
   }
 
 
-form #message{
-    display: block;
-    padding: 10px;
-    display: block;
-}
 
 
 button[type=submit] {
