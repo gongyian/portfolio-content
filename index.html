@@ -109,27 +109,23 @@
         </main>
 
         <!-- modify this form HTML and place wherever you want your form -->
-        <form
-              action="https://formspree.io/f/xeqdpvpe"
-                 method="POST">
-            <label>
-            Your email:
-  
-        <input type="email" name="email">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
-            </label> 
+        <form action="https://formspree.io/f/xeqdpvpe" method="POST">
+
+            <label id="email"> Your email:</label>
+            <input type="email" name="email">
+
+            <label id="message"> Your message: </label>
+            <textarea type="message" name="message"></textarea> 
+
             <!-- your other form fields go here -->
-            <button type="submit">Send</button>
+            <button id="send" type="submit">Send</button>
         </form>
 
 
         <footer>
             <p>Yian Gong</p> <p>@2022</p> <p>gyian@umich.edu</p>
-               
         </footer>
+
     </div>
 
 

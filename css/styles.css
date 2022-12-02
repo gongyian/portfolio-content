@@ -217,7 +217,54 @@ h1{
 
 form{
     margin: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
+
+form #email{
+    display: block;
+    padding: 10px;
+    display: block;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+textarea[type=message], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+form #message{
+    display: block;
+    padding: 10px;
+    display: block;
+}
+
+
+button[type=submit] {
+    width: 100%;
+    background-color:#B4CFEC;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
 .skip a{
     background: white;
@@ -247,19 +294,6 @@ form{
     padding-left: 20px;
 }
 
-.food_img figure:hover img{
-    filter: blur(4px);
-
-}
-
-.food_img figure:hover figcaption{
-    font-weight: 500;
-    position:relative;
-    top: -50px;
-    left:30px;
-    color: #fff;
-    text-shadow: 1px 1px 2px #be1c2d;
-}
 
 
 
@@ -326,23 +360,29 @@ form{
         margin-top: 50px;
     }
 
+    .food_img figcaption{
+        position: absolute;
+        top: -500px;
+    }
+
     .food_img figure:hover img{
-        filter: blur(0px);
+        filter: blur(4px);
     
     }
     
     .food_img figure:hover figcaption{
         font-weight: 500;
         position:relative;
-        top: 0;
-        left:0;
-        color: #000;
-        text-shadow: none;
+        top: -50px;
+        left:30px;
+        color: #fff;
+        text-shadow: 1px 1px 2px #be1c2d;
+    }
+    .culture_img figcaption{
+        display: none;
+    }
     }
 
-
-	
-}
 
 @media screen and (min-width: 968px){
 
