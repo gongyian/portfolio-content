@@ -47,7 +47,8 @@ a{
 
 .current{
     font-weight:900;
-    color:#be1c2d;
+    text-decoration-style: wavy;
+
 
 
 
@@ -230,6 +231,7 @@ input[type=email], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
   }
 
 textarea[name=message], select {
@@ -240,6 +242,7 @@ textarea[name=message], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
   }
 
 button[type=submit] {
@@ -250,6 +253,7 @@ button[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
   }
 
 .skip a{
@@ -417,6 +421,11 @@ button[type=submit] {
 
     .culture_img figcaption{
         display: none;
+    }
+
+    .background_img{
+        background-size: 100vw 50vw;
+
     }
 
 }
